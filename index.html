@@ -10,27 +10,30 @@
       margin: 40px;
       text-align: center;
     }
+
     /* Style for your image */
     img {
-    img, canvas {
       border: 1px solid #ccc;
       margin-bottom: 20px;
       width: 400px;
       height: 500px;
       object-fit: contain;
     }
+
     /* Hidden by default */
     #description {
-      display: none;
+      display: none; 
       max-width: 600px;
       margin: 20px auto;
       text-align: left;
       line-height: 1.5;
     }
+
     button {
       padding: 10px 20px;
       font-size: 1rem;
       cursor: pointer;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -38,18 +41,13 @@
 
   <h1>Michelle Obama Monument</h1>
 
-  <!-- Make sure your image file is named exactly "monument-drawing.png" -->
+  <!-- Make sure this matches exactly the PNG filename in your folder: monument-drawing.png -->
   <img src="monument-drawing.png" alt="Hand-drawn Monument">
 
-  <!-- Button to toggle show/hide -->
+  <!-- Single toggle button -->
   <button id="toggleBtn">Show Monument Description</button>
-  <!-- Show your hand-drawn image here (place monument-drawing.png alongside these files) -->
-  <img src="monument-drawing.png" alt="Hand-drawn Monument" width="400" height="500">
 
-  <!-- Button to reveal the paragraph -->
-  <button id="showBtn">Show Monument Description</button>
-
-  <!-- Hidden paragraph to reveal/hide -->
+  <!-- Hidden paragraph to toggle on/off -->
   <div id="description">
     <p>
       I chose Michelle Obama for my monument because I am currently reading one of her books, 
@@ -67,8 +65,7 @@
     </p>
   </div>
 
-  <!-- Link to our JavaScript that does the toggle logic -->
-  <!-- JavaScript for button logic -->
+  <!-- Link to the JavaScript that handles the toggle logic -->
   <script src="script.js"></script>
 </body>
 </html>
