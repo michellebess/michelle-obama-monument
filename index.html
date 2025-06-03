@@ -12,6 +12,7 @@
     }
     /* Style for your image */
     img {
+    img, canvas {
       border: 1px solid #ccc;
       margin-bottom: 20px;
       width: 400px;
@@ -42,6 +43,11 @@
 
   <!-- Button to toggle show/hide -->
   <button id="toggleBtn">Show Monument Description</button>
+  <!-- Show your hand-drawn image here (place monument-drawing.png alongside these files) -->
+  <img src="monument-drawing.png" alt="Hand-drawn Monument" width="400" height="500">
+
+  <!-- Button to reveal the paragraph -->
+  <button id="showBtn">Show Monument Description</button>
 
   <!-- Hidden paragraph to reveal/hide -->
   <div id="description">
@@ -62,6 +68,7 @@
   </div>
 
   <!-- Link to our JavaScript that does the toggle logic -->
+  <!-- JavaScript for button logic -->
   <script src="script.js"></script>
 </body>
 </html>
