@@ -10,7 +10,7 @@
       margin: 40px;
       text-align: center;
     }
-    canvas {
+    img, canvas {
       border: 1px solid #ccc;
       margin-bottom: 20px;
     }
@@ -31,22 +31,32 @@
 <body>
 
   <h1>Michelle Obama Monument</h1>
-  <p style="color: #888; font-size: 0.9rem;">(Testing new deployment: version 2)</p>
 
-  <!-- Canvas for drawing -->
-  <canvas id="portraitCanvas" width="400" height="500"></canvas>
+  <!-- Show your hand-drawn image here (place monument-drawing.png alongside these files) -->
+  <img src="monument-drawing.png" alt="Hand-drawn Monument" width="400" height="500">
 
-  <!-- Button to reveal paragraph -->
+  <!-- Button to reveal the paragraph -->
   <button id="showBtn">Show Monument Description</button>
 
   <!-- Hidden paragraph -->
   <div id="description">
     <p>
-    I chose Michelle Obama for my monument because I am currently reading one of her books, Becoming, and I find her life story very inspiring. Michelle Obama was the First Lady of the United States from 2009 to 2017 during her husband, Barack Obama’s, presidency. She is the first African-American to serve as First Lady of the United States. Her appointment as First Lady symbolises progress for Black women and the wider African-American community. Michelle Obama has also started a campaign called “Let's Move!”, which focuses on promoting healthy eating and physical activity for children in order to create a healthier future. The campaign got over 520 elected officials involved and impacted over 81 million Americans. Michelle Obama has also been volunteering in many different ways to benefit African-American communities throughout her life, including the NAACP Voter-Turnout Partnership, empowering African-American girls, and more. Michelle Obama continues inspiring people and helping out many communities even after her term as First Lady, and has a great effect on the country and, in particular, the African-American community.
+      I chose Michelle Obama for my monument because I am currently reading one of her books, 
+      <em>Becoming</em>, and I find her life story very inspiring. Michelle Obama was the First Lady 
+      of the United States from 2009 to 2017 during her husband, Barack Obama’s presidency. She is the 
+      first African-American to serve as First Lady of the United States. Her appointment as First Lady 
+      symbolizes progress for Black women and the wider African-American community. Michelle Obama also 
+      started a campaign called “Let’s Move!”, which focuses on promoting healthy eating and physical 
+      activity for children in order to create a healthier future. The campaign got over 520 elected 
+      officials involved and impacted over 81 million Americans. Michelle Obama has volunteered in many 
+      ways to benefit African-American communities throughout her life, including the NAACP Voter-Turnout 
+      Partnership and empowering African-American girls. Even after her term as First Lady, Michelle 
+      Obama continues inspiring people and helping out communities, having a great effect on the country 
+      and, in particular, the African-American community.
     </p>
   </div>
 
-  <!-- Include the JS that draws on the canvas and handles the button -->
+  <!-- JavaScript for button logic -->
   <script src="script.js"></script>
 </body>
 </html>
